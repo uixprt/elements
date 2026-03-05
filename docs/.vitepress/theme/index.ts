@@ -1,9 +1,13 @@
 import DefaultTheme from 'vitepress/theme';
+import type { Theme } from 'vitepress';
 import './custom.css';
 
-// Always register web components from local source during dev/build
-import '../../../src/index.ts';
-
 export default {
-  ...DefaultTheme,
-};
+  extends: DefaultTheme,
+  async enhanceApp({ app }) {
+    // Only load Web Components on client side (not during SSR)
+    if (!import.meta.env.SSR) {
+      await import('../../../src/index.ts');
+    }
+  },
+} satisfies Theme;
