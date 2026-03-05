@@ -1,5 +1,5 @@
 /**
- * Shared TypeScript types for @elements/ui
+ * Shared TypeScript types for @a/elements
  */
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger';

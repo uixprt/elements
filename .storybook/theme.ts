@@ -2,7 +2,7 @@ import { create } from 'storybook/theming/create';
 
 export default create({
   base: 'dark',
-  brandTitle: '@elements/ui',
+  brandTitle: '@a/elements',
   brandUrl: '/',
   brandTarget: '_self',
 

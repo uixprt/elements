@@ -44,7 +44,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/your-org/elements' },
     ],
     footer: {
-      message: 'Private — @elements/ui',
+      message: 'Private — @a/elements',
       copyright: `Copyright © ${new Date().getFullYear()}`,
     },
     search: {
