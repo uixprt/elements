@@ -1,4 +1,4 @@
-import{b as a}from"./iframe-D_2zchzR.js";import"./preload-helper-Dp1pzeXC.js";const Q={title:"Components/Button",component:"a-button",tags:["autodocs"],parameters:{docs:{description:{component:`
+import{b as a}from"./iframe-cyvZDWUc.js";import"./preload-helper-Dp1pzeXC.js";const Q={title:"Components/Button",component:"a-button",tags:["autodocs"],parameters:{docs:{description:{component:`
 An accessible, framework-agnostic button component with multiple variants and sizes.
 
 \`\`\`html
