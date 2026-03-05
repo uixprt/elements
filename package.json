@@ -1,6 +1,6 @@
 {
   "name": "@uixprt/elements",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Framework-agnostic Web Components library - React compatible",
   "type": "module",
   "files": [
