@@ -21,9 +21,16 @@ export default defineConfig({
     },
     rollupOptions: {
       // No externals — self-contained bundle
-      output: {
-        entryFileNames: '[name].[format === "es" ? "js" : "cjs"]',
-      },
+      output: [
+        {
+          format: 'es',
+          entryFileNames: '[name].js',
+        },
+        {
+          format: 'cjs',
+          entryFileNames: '[name].cjs',
+        },
+      ],
     },
     sourcemap: true,
     minify: false,

@@ -27,6 +27,7 @@ export class Svg extends HTMLElement {
   private _shadow: ShadowRoot;
   private _svgEl: SVGElement | null = null;
   private _slotEl: HTMLSlotElement | null = null;
+  private _initialized = false;
 
   constructor() {
     super();
@@ -40,8 +41,13 @@ export class Svg extends HTMLElement {
       style.textContent = svgIconStylesContent;
       this._shadow.appendChild(style);
     }
-    
-    this._render();
+  }
+
+  connectedCallback(): void {
+    if (!this._initialized) {
+      this._render();
+      this._initialized = true;
+    }
   }
 
   get name(): string {

@@ -30,6 +30,7 @@ export class Button extends HTMLElement {
 
   private _shadow: ShadowRoot;
   private _btn!: HTMLButtonElement;
+  private _initialized = false;
 
   constructor() {
     super();
@@ -43,8 +44,13 @@ export class Button extends HTMLElement {
       style.textContent = buttonStylesContent;
       this._shadow.appendChild(style);
     }
-    
-    this._render();
+  }
+
+  connectedCallback(): void {
+    if (!this._initialized) {
+      this._render();
+      this._initialized = true;
+    }
   }
 
   get variant(): ButtonVariant {
