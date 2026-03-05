@@ -4,6 +4,7 @@ export default create({
   base: 'dark',
   brandTitle: '@a/elements',
   brandUrl: '/',
+  brandImage: '/logo.svg',
   brandTarget: '_self',
 
   // Colors
