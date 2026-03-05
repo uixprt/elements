@@ -33,7 +33,7 @@
     "lint": "eslint src --ext .ts",
     "format": "prettier --write src",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o docs/.vitepress/public/storybook",
+    "build-storybook": "storybook build -o docs/public/storybook",
     "docs:dev": "vitepress dev docs",
     "docs:build": "npm run build-storybook && vitepress build docs",
     "docs:preview": "vitepress preview docs"
