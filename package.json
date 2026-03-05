@@ -1,8 +1,7 @@
 {
-  "name": "@a/elements",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Framework-agnostic Web Components library",
+  "name": "@uixprt/elements",
+  "version": "0.0.1",
+  "description": "Framework-agnostic Web Components library - React compatible",
   "type": "module",
   "files": [
     "dist"
@@ -38,6 +37,26 @@
     "docs:build": "npm run build-storybook && vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uixprt/elements.git"
+  },
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "react",
+    "svg",
+    "icons",
+    "button",
+    "typescript",
+    "framework-agnostic"
+  ],
+  "author": "uixprt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uixprt/elements/issues"
+  },
+  "homepage": "https://github.com/uixprt/elements#readme",
   "devDependencies": {
     "@storybook/addon-a11y": "^10.2.15",
     "@storybook/addon-docs": "^10.2.15",
