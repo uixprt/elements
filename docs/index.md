@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "@a/elements"
+  name: "@uixprt/elements"
   text: "Web Components Library"
   tagline: Framework-agnostic, accessible, and themeable UI components built with native Custom Elements.
   actions:

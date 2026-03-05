@@ -1,10 +1,10 @@
 /**
- * @a/elements — Framework-agnostic Web Components
+ * @uixprt/elements — Framework-agnostic Web Components
  *
  * Importing this module registers all custom elements.
  * For tree-shakeable imports, use individual component paths:
- *   import '@a/elements/svg-icon'
- *   import '@a/elements/button'
+ *   import '@uixprt/elements/svg-icon'
+ *   import '@uixprt/elements/button'
  */
 
 // Re-export component classes

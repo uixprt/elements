@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: '@a/elements',
+  title: '@uixprt/elements',
   description: 'Framework-agnostic Web Components library',
   lang: 'en-US',
   cleanUrls: true,
@@ -41,10 +41,10 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/elements' },
+      { icon: 'github', link: 'https://github.com/uixprt/elements' },
     ],
     footer: {
-      message: 'Private — @a/elements',
+      message: 'Private — @uixprt/elements',
       copyright: `Copyright © ${new Date().getFullYear()}`,
     },
     search: {
@@ -57,7 +57,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@a/elements': '../../src/index.ts',
+        '@uixprt/elements': '../../src/index.ts',
       },
     },
     css: {

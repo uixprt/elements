@@ -1,4 +1,4 @@
-# Publishing @a/elements to npm
+# Publishing @uixprt/elements to npm
 
 This guide explains how to publish the web components package to npm registry or a private artifactory.
 
@@ -6,13 +6,13 @@ This guide explains how to publish the web components package to npm registry or
 
 - npm account (create at https://www.npmjs.com/signup)
 - Logged in via `npm login`
-- Package name `@a/elements` must be available or you need to use a scope you own
+- Package name `@uixprt/elements` must be available or you need to use a scope you own
 
 ## Publishing to npm Registry
 
 ### 1. Update Package Name (if needed)
 
-If `@a/elements` is taken, update the scope in `package.json`:
+If `@uixprt/elements` is taken, update the scope in `package.json`:
 
 ```json
 {
@@ -103,7 +103,7 @@ Replace the file reference with the published version:
 ```json
 {
   "dependencies": {
-    "@a/elements": "^0.1.0"  // Instead of "file:../../../elements"
+    "@uixprt/elements": "^0.1.0"  // Instead of "file:../../../elements"
   }
 }
 ```
@@ -121,7 +121,7 @@ pnpm install
 
 No code changes needed! The imports remain the same:
 ```typescript
-import '@a/elements';
+import '@uixprt/elements';
 ```
 
 ## Benefits of Publishing
@@ -135,7 +135,7 @@ import '@a/elements';
 ## Package Information
 
 Current package details from `elements/package.json`:
-- **Name:** @a/elements
+- **Name:** @uixprt/elements
 - **Version:** 0.1.0
 - **License:** MIT
 - **Type:** Module (ESM + CommonJS)

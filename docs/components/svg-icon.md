@@ -69,7 +69,7 @@ This is useful for loading icons at runtime or letting users pick SVG files.
 ## JavaScript API
 
 ```ts
-import { Svg } from '@a/elements/svg-icon';
+import { Svg } from '@uixprt/elements/svg-icon';
 
 const icon = document.querySelector('a-svg') as Svg;
 icon.name = 'heart';

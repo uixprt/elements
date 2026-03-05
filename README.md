@@ -1,4 +1,4 @@
-# @a/elements
+# @uixprt/elements
 
 A private, framework-agnostic Web Components library built with native Custom Elements v1.
 
@@ -12,7 +12,7 @@ A private, framework-agnostic Web Components library built with native Custom El
 ## Installation
 
 ```bash
-npm install @a/elements
+npm install @uixprt/elements
 ```
 
 ## Usage
@@ -20,14 +20,14 @@ npm install @a/elements
 ### Via ES Module import (tree-shakeable)
 
 ```js
-import '@a/elements/svg-icon';
-import '@a/elements/button';
+import '@uixprt/elements/svg-icon';
+import '@uixprt/elements/button';
 ```
 
 ### Import everything
 
 ```js
-import '@a/elements';
+import '@uixprt/elements';
 ```
 
 ### HTML (after import)

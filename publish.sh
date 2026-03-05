@@ -56,7 +56,7 @@ if [ $? -eq 0 ]; then
     echo "   cd ../starterkit"
     echo "   npm install @uixprt/elements@0.0.1"
     echo ""
-    echo "2. Update package.json files to use @uixprt/elements instead of @a/elements"
+    echo "2. Update package.json files to use @uixprt/elements instead of @uixprt/elements"
     echo ""
     echo "3. Push changes and redeploy"
 else

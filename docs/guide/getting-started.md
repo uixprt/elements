@@ -2,12 +2,12 @@
 
 ## Introduction
 
-`@a/elements` is a private library of framework-agnostic UI components built with native [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) (Custom Elements v1 + Shadow DOM). They work in any JavaScript framework or plain HTML.
+`@uixprt/elements` is a private library of framework-agnostic UI components built with native [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) (Custom Elements v1 + Shadow DOM). They work in any JavaScript framework or plain HTML.
 
 ## Installation
 
 ```bash
-npm install @a/elements
+npm install @uixprt/elements
 ```
 
 > **Note:** This is a private package. Make sure your `.npmrc` is configured to point to the correct registry.
@@ -19,7 +19,7 @@ npm install @a/elements
 Registers all custom elements at once:
 
 ```js
-import '@a/elements';
+import '@uixprt/elements';
 ```
 
 ### Tree-shakeable imports
@@ -27,8 +27,8 @@ import '@a/elements';
 Import only what you use:
 
 ```js
-import '@a/elements/svg-icon';
-import '@a/elements/button';
+import '@uixprt/elements/svg-icon';
+import '@uixprt/elements/button';
 ```
 
 ### HTML
@@ -47,7 +47,7 @@ After importing, use the elements like any native HTML element:
 **React (18+)**
 
 ```tsx
-import '@a/elements';
+import '@uixprt/elements';
 
 export function SaveButton() {
   return <a-button variant="primary">Save</a-button>;
@@ -58,7 +58,7 @@ export function SaveButton() {
 
 ```html
 <script setup>
-import '@a/elements';
+import '@uixprt/elements';
 </script>
 
 <template>
@@ -70,7 +70,7 @@ import '@a/elements';
 
 ```ts
 // app.module.ts
-import '@a/elements';
+import '@uixprt/elements';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({ schemas: [CUSTOM_ELEMENTS_SCHEMA] })

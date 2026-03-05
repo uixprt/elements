@@ -1,5 +1,5 @@
 /**
- * Shared TypeScript types for @a/elements
+ * Shared TypeScript types for @uixprt/elements
  */
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'danger';

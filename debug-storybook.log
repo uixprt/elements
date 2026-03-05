@@ -26,7 +26,7 @@
 
 {
   "version": "0.1.0",
-  "name": "@a/elements"
+  "name": "@uixprt/elements"
 }
 [22:01:22.609] [DEBUG] No installations found for @storybook/experimental-addon-test
 [22:01:22.609] [INFO] detect-projects-spinner-stop: 1 project detected
@@ -104,7 +104,7 @@
 
 {
   "version": "0.1.0",
-  "name": "@a/elements"
+  "name": "@uixprt/elements"
 }
 [22:01:27.103] [DEBUG] No installations found for @storybook/addon-essentials
 [22:01:27.103] [DEBUG] Getting CLI versions from NPM for @storybook/addon-essentials...
@@ -113,7 +113,7 @@
 
 {
   "version": "0.1.0",
-  "name": "@a/elements"
+  "name": "@uixprt/elements"
 }
 [22:01:27.106] [DEBUG] No installations found for @chromatic-com/storybook
 [22:01:27.106] [DEBUG] Using cached version for @chromatic-com/storybook...
@@ -121,7 +121,7 @@
 
 {
   "version": "0.1.0",
-  "name": "@a/elements"
+  "name": "@uixprt/elements"
 }
 [22:01:27.112] [DEBUG] No installations found for @storybook/blocks
 [22:01:27.112] [DEBUG] Getting CLI versions from NPM for @storybook/blocks...
@@ -219,7 +219,7 @@ Run `npm audit` for details.
 
 {
   "version": "0.1.0",
-  "name": "@a/elements"
+  "name": "@uixprt/elements"
 }
 [22:01:47.742] [WARN] /.storybook: 1 issue found
 [22:01:47.742] [INFO] You are currently using Storybook [1m10.2.15[22m but you have packages which are incompatible with it:

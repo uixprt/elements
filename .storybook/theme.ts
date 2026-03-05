@@ -2,7 +2,7 @@ import { create } from 'storybook/theming/create';
 
 export default create({
   base: 'dark',
-  brandTitle: '@a/elements',
+  brandTitle: '@uixprt/elements',
   brandUrl: '/',
   brandImage: '/logo.svg',
   brandTarget: '_self',

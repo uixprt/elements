@@ -65,7 +65,7 @@ elements-button::part(button) {
 ## JavaScript API
 
 ```ts
-import { Button } from '@a/elements/button';
+import { Button } from '@uixprt/elements/button';
 
 const btn = document.querySelector('a-button') as Button;
 btn.variant = 'danger';
