@@ -1,4 +1,4 @@
-import{b as s}from"./iframe-i9-DXKss.js";import"./preload-helper-Dp1pzeXC.js";const r={name:"Dynamic src (SVG file)",render:(e,{updateArgs:c})=>{let a=e.src||"";return s`
+import{b as s}from"./iframe-C8XnJ2Fr.js";import"./preload-helper-Dp1pzeXC.js";const r={name:"Dynamic src (SVG file)",render:(e,{updateArgs:c})=>{let a=e.src||"";return s`
       <div style="display:flex;flex-direction:column;gap:1rem;align-items:flex-start;">
         <label>
           SVG file URL:
