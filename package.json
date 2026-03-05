@@ -1,0 +1,60 @@
+{
+  "name": "@a/elements",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework-agnostic Web Components library",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./svg-icon": {
+      "types": "./dist/components/svg-icon/index.d.ts",
+      "import": "./dist/svg-icon.js",
+      "require": "./dist/svg-icon.cjs"
+    },
+    "./button": {
+      "types": "./dist/components/button/index.d.ts",
+      "import": "./dist/button.js",
+      "require": "./dist/button.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly && vite build",
+    "dev": "vite build --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o docs/.vitepress/public/storybook",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "npm run build-storybook && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-a11y": "^8.6.4",
+    "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/addon-links": "^8.6.4",
+    "@storybook/blocks": "^8.6.4",
+    "@storybook/web-components": "^8.6.4",
+    "@storybook/web-components-vite": "^8.6.4",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "eslint": "^9.21.0",
+    "lit": "^3.2.1",
+    "prettier": "^3.5.2",
+    "storybook": "^8.6.4",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vite-plugin-dts": "^4.5.3",
+    "vitepress": "^1.6.3"
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --vp-font-family-base: 'Inter', system-ui, sans-serif;
+  --vp-font-family-mono: 'Fira Code', monospace;
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+}
+
+.dark {
+  --vp-c-bg: #0f172a;
+  --vp-c-bg-soft: #1e293b;
+  --vp-c-bg-mute: #334155;
+  --vp-c-border: #334155;
+  --vp-c-text-1: #f1f5f9;
+  --vp-c-text-2: #94a3b8;
+  --vp-c-text-3: #64748b;
+}
+
+/* Demo preview containers */
+.demo-box {
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  background: var(--vp-c-bg-soft);
+}
+
+.demo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 1.25rem;
+}
+
+.demo-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.demo-icon-label {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.65rem;
+  color: var(--vp-c-text-3);
+}
