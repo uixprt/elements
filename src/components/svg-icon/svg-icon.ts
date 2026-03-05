@@ -1,4 +1,4 @@
-import { svgIconStyles } from './svg-icon.css.js';
+import { svgIconStyles, svgIconStylesContent } from './svg-icon.css.js';
 
 const BUILT_IN_ICONS: Record<string, string> = {
   star: `<path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-3.885a.562.562 0 0 0-.652 0L4.83 19.64a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557L.86 9.397c-.38-.325-.178-.948.321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>`,
@@ -31,7 +31,16 @@ export class Svg extends HTMLElement {
   constructor() {
     super();
     this._shadow = this.attachShadow({ mode: 'open' });
-    this._shadow.adoptedStyleSheets = [svgIconStyles];
+    
+    // SSR-safe: Use constructible stylesheets if available, otherwise use style tag
+    if (svgIconStyles) {
+      this._shadow.adoptedStyleSheets = [svgIconStyles];
+    } else {
+      const style = document.createElement('style');
+      style.textContent = svgIconStylesContent;
+      this._shadow.appendChild(style);
+    }
+    
     this._render();
   }
 

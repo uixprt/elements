@@ -1,8 +1,8 @@
 /**
  * CSS styles for <elements-svg-icon>
  */
-export const svgIconStyles = new CSSStyleSheet();
-svgIconStyles.replaceSync(`
+
+const cssContent = `
   :host {
     display: inline-flex;
     align-items: center;
@@ -23,4 +23,15 @@ svgIconStyles.replaceSync(`
     fill: currentColor;
     overflow: hidden;
   }
-`);
+`;
+
+// SSR-safe: Only create CSSStyleSheet in browser environment
+export const svgIconStyles = typeof CSSStyleSheet !== 'undefined' 
+  ? (() => {
+      const sheet = new CSSStyleSheet();
+      sheet.replaceSync(cssContent);
+      return sheet;
+    })()
+  : null;
+
+export const svgIconStylesContent = cssContent;

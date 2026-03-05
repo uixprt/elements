@@ -1,8 +1,8 @@
 /**
  * CSS styles for <elements-button>
  */
-export const buttonStyles = new CSSStyleSheet();
-buttonStyles.replaceSync(`
+
+const cssContent = `
   :host {
     display: inline-block;
     box-sizing: border-box;
@@ -140,4 +140,15 @@ buttonStyles.replaceSync(`
   @keyframes spin {
     to { transform: rotate(360deg); }
   }
-`);
+`;
+
+// SSR-safe: Only create CSSStyleSheet in browser environment
+export const buttonStyles = typeof CSSStyleSheet !== 'undefined' 
+  ? (() => {
+      const sheet = new CSSStyleSheet();
+      sheet.replaceSync(cssContent);
+      return sheet;
+    })()
+  : null;
+
+export const buttonStylesContent = cssContent;

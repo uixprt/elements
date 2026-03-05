@@ -1,5 +1,5 @@
 // ...existing code...
-import { buttonStyles } from './button.css.js';
+import { buttonStyles, buttonStylesContent } from './button.css.js';
 import type { ButtonVariant, ButtonSize } from '../../utils/types.js';
 
 /**
@@ -34,7 +34,16 @@ export class Button extends HTMLElement {
   constructor() {
     super();
     this._shadow = this.attachShadow({ mode: 'open' });
-    this._shadow.adoptedStyleSheets = [buttonStyles];
+    
+    // SSR-safe: Use constructible stylesheets if available, otherwise use style tag
+    if (buttonStyles) {
+      this._shadow.adoptedStyleSheets = [buttonStyles];
+    } else {
+      const style = document.createElement('style');
+      style.textContent = buttonStylesContent;
+      this._shadow.appendChild(style);
+    }
+    
     this._render();
   }
 
