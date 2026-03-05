@@ -1,5 +1,5 @@
-import type { Preview } from '@storybook/web-components';
-import { setCustomElementsManifest } from '@storybook/web-components';
+import type { Preview } from '@storybook/web-components-vite';
+import { setCustomElementsManifest } from '@storybook/web-components-vite';
 import theme from './theme';
 
 // Register all custom elements from local source
@@ -13,12 +13,11 @@ const preview: Preview = {
       theme,
     },
     backgrounds: {
-      default: 'dark',
-      values: [
-        { name: 'dark', value: '#0f172a' },
-        { name: 'light', value: '#f8fafc' },
-        { name: 'neutral', value: '#1e293b' },
-      ],
+      options: {
+        dark: { name: 'dark', value: '#0f172a' },
+        light: { name: 'light', value: '#f8fafc' },
+        neutral: { name: 'neutral', value: '#1e293b' }
+      }
     },
     layout: 'centered',
     controls: {
@@ -28,6 +27,12 @@ const preview: Preview = {
       },
     },
   },
+
+  initialGlobals: {
+    backgrounds: {
+      value: 'dark'
+    }
+  }
 };
 
 export default preview;

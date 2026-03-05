@@ -57,7 +57,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@a/elements': '/mnt/shared/projects/A/elements/src/index.ts',
+        '@a/elements': '../../src/index.ts',
       },
     },
     css: {

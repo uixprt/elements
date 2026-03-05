@@ -2,20 +2,15 @@ import type { StorybookConfig } from '@storybook/web-components-vite';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(ts|tsx|mdx)'],
-  addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-links',
-    '@storybook/addon-a11y',
-    '@chromatic-com/storybook',
-  ],
+  addons: ['@storybook/addon-links', '@storybook/addon-a11y', '@storybook/addon-docs'],
   framework: {
     name: '@storybook/web-components-vite',
     options: {},
   },
   docs: {
-    autodocs: 'tag',
-    defaultName: 'Docs',
+    defaultName: 'Docs'
   },
+  staticDirs: ['../public'],
 };
 
 export default config;

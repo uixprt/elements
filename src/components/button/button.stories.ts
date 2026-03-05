@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
+import type { Meta, StoryObj } from '@storybook/web-components-vite';
 import { html } from 'lit';
 
 const meta: Meta = {
@@ -136,16 +136,20 @@ export const WithIcon: Story = {
   render: () => html`
     <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
       <a-button variant="primary">
-        <a-svg-icon name="download" size="16" style="margin-right:0.25rem"></a-svg-icon>
+        <a-svg name="download" size="16" style="margin-right:0.25rem"></a-svg>
         Download
       </a-button>
       <a-button variant="danger">
-        <a-svg-icon name="trash" size="16" style="margin-right:0.25rem"></a-svg-icon>
+        <a-svg name="trash" size="16" style="margin-right:0.25rem"></a-svg>
         Delete
       </a-button>
       <a-button variant="secondary">
-        <a-svg-icon name="plus" size="16" style="margin-right:0.25rem"></a-svg-icon>
+        <a-svg name="plus" size="16" style="margin-right:0.25rem"></a-svg>
         Add Item
+      </a-button>
+      <a-button variant="ghost">
+        <a-svg src="/logo.svg" size="16" style="margin-right:0.25rem"></a-svg>
+        With Logo
       </a-button>
     </div>
   `,
